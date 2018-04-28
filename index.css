@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #004953;
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+header img {
+  height: 100px;
+}
+
+header h1 {
+  margin-top: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-4,
+.col-8 {
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.col-4 {
+    width: 33.33%
+}
+.col-8 {
+    float: right;
+    width: 66.67%
+}
+
+body {
+  background: url('https://wallpapercave.com/wp/7hHIyGn.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  width: 80%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #333333;
+  border: 1px solid #444444;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+aside {
+  background-color: #004953;
+  width: 80%;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px;
+  text-align:center;
+}
+
+label {
+  color: white;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 5px solid #784421;
+    background-color: white;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.question {
+  font-size: 40px;
+}
+
+.answer-choice {
+  position: relative;
+  display: flex;
+  background-color: #004953;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answer-choice:hover, .answer-choice:focus {
+    background-color: #dddddd;
+    color: #004953;
+}
+
+input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.start-page {
+  text-align: center;
+  margin: 0;
+}
+
+.start-page h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.start-page h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, button:focus {
+    background-color: #dddddd;
+    color: #004953;
+}
+
+.start-button {
+  background-color: #004953;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+  background-color: #004953;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#answerResults {
+  background-color: #004953;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+#answerResults:hover, #answerResults:focus {
+    background-color: #dddddd;
+    color: #004953;
+}
+
+h1, h2, p {
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  
+  header h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    margin-right: 30%;
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+  }
+  
+  .col-8, .col-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  header img {
+    visibility: hidden;
+  }
+  
+  header 
+  {
+    height: 115px;
+}
+
+@media screen and (max-width: 278px) {
+  header img {
+    visibility: hidden;
+  }
+  
+  header 
+  {
+    height: 150px;
+}
+
+@media screen and (max-width: 260px) {
+  header img {
+    visibility: hidden;
+  }
+  
+  header 
+  {
+    height: 185px;
+}
+
+.start-button {
+  background-color: #004953;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 180px) {
+  header img {
+    visibility: hidden;
+  }
+  
+  header 
+  {
+    height: 225px;
+}
+
+.start-button {
+  background-color: #004953;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
