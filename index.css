@@ -59,6 +59,10 @@ fieldset {
   padding: 0;
 }
 
+legend {
+  color: white;
+}
+
 aside {
   background-color: #004953;
   width: 80%;

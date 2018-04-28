@@ -36,12 +36,12 @@ let answers = STORE[currentQuestion].answers
   
   $('.js-question-body').html(`
     <form class="question-form js-question-form" role="form">
-      <fieldset role="group">
-       
-        <label>
-          <span class="question">${STORE[currentQuestion].question}</span>
-        </label>
-            
+
+      <label>
+        <span class="question">${STORE[currentQuestion].question}</span>
+      </label>
+      <fieldset role="group"> 
+        <legend>Choose one of the following!</legend>       
         <label class="js-answer-choice answer-choice">
           <input type="radio" role="radio" name="answer" value="${answers[0]}" required>
           <span>${answers[0]}</span>
@@ -61,14 +61,14 @@ let answers = STORE[currentQuestion].answers
           <input type="radio" role="radio" name="answer" value="${answers[3]}" required>
           <span>${answers[3]}</span>
         </label>
-          
+      </fieldset>     
         <div class="center-button" role="region">
           <button type="submit" class="submit-button js-submit-button" role="button">
             <span>Submit</span>
           </button>
         </div>
         
-    </fieldset>
+    
       
   </form>`
     );
